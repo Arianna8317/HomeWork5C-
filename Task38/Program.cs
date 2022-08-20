@@ -44,5 +44,5 @@
   System.Console.Write("Массив ");
   double[] Array=GenDoubleArray(N);
   PrintDoubleArray(Array);
-  double res =  MinMax(Array).Max-MinMax(Array).Min;
+  double res = Math.Round(MinMax(Array).Max-MinMax(Array).Min ,2);
   System.Console.WriteLine($"Максимум превышает минимум на   {res}");
