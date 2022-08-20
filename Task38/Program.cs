@@ -23,7 +23,7 @@
    System.Console.WriteLine("}");
   }
 
-   double MinMax(double[] Array)
+(double Min, double Max) MinMax(double[] Array)
   {
     
     double min = Array[0];
@@ -35,7 +35,7 @@
              min = Array[i];
           
      }  
-    return (max - min);
+    return (Min: min, Max: max);
 
   }       
         
@@ -44,5 +44,5 @@
   System.Console.Write("Массив ");
   double[] Array=GenDoubleArray(N);
   PrintDoubleArray(Array);
-
-  System.Console.WriteLine($"Максимум превышает минимум на   {MinMax(Array)}");
+  double res =  MinMax(Array).Max-MinMax(Array).Min;
+  System.Console.WriteLine($"Максимум превышает минимум на   {res}");
